@@ -6,6 +6,7 @@ categories: ubuntu
 description: A tutorial to set up powerline in <code>bash</code>, <code>vim</code> and <code>tmux</code>.
 thumbnail: /blog/images/thumbnail-powerline.jpg
 type: blog
+tags: [powerline, ubuntu, terminal, vim, tmux, bash]
 ---
 <style>
 {% include custom.css %}

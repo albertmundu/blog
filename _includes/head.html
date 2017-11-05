@@ -2,22 +2,12 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  {% if post.description %}
-  <meta name="description" content="{{ post.description | escape }}">
-  <meta property="og:description"   content="{{post.description | escape }}" />
-  {% endif %}
-  {% if post.tags %}
-  <meta name="keywords" content="{{ post.tags | join: ', ' | escape }}"/>
-  {% endif %}
-  {% if post.title %}
-  <meta property="og:title" content="{{ post.title | escape }}" />
-  {% endif %}
-  {% if post.type %}
-  <meta property="og:type" content="{{ post.type | escape }}" />
+  {% if page.tags %}
+  <meta name="keywords" content="{{ page.tags }}"/>
   {% endif %}
 
-  {% if post.thumbnail %}
-  <meta property="og:image" content="{{ post.thumbnail | escape }}" />
+  {% if page.thumbnail %}
+  <meta property="og:image" content="{{ page.thumbnail | escape }}" />
   {% endif %}
 
   {% seo %}
