@@ -1,4 +1,28 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.0">Jekyll</generator><link href="http://localhost:4000/blog/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/blog/" rel="alternate" type="text/html" /><updated>2017-11-05T13:34:55+05:30</updated><id>http://localhost:4000/blog/</id><title type="html">Extended Blog</title><subtitle>Albert writes down what he thinks to be written down.</subtitle><entry><title type="html">Installing Powerline in Ubuntu 16.04.3 LTS</title><link href="http://localhost:4000/blog/ubuntu/2017/11/04/powerline-in-ubuntu-16.04-LTS.html" rel="alternate" type="text/html" title="Installing Powerline in Ubuntu 16.04.3 LTS" /><published>2017-11-04T12:26:56+05:30</published><updated>2017-11-04T12:26:56+05:30</updated><id>http://localhost:4000/blog/ubuntu/2017/11/04/powerline-in-ubuntu-16.04-LTS</id><content type="html" xml:base="http://localhost:4000/blog/ubuntu/2017/11/04/powerline-in-ubuntu-16.04-LTS.html">&lt;meta property=&quot;og:image&quot; content=&quot;/blog/images/powerline.png&quot; /&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.0">Jekyll</generator><link href="http://localhost:4000/blog/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/blog/" rel="alternate" type="text/html" /><updated>2017-11-05T14:57:51+05:30</updated><id>http://localhost:4000/blog/</id><title type="html">Extended Blog</title><subtitle>Albert writes down what he thinks to be written down.</subtitle><entry><title type="html">Installing Powerline in Ubuntu 16.04.3 LTS</title><link href="http://localhost:4000/blog/ubuntu/2017/11/04/powerline-in-ubuntu-16.04-LTS.html" rel="alternate" type="text/html" title="Installing Powerline in Ubuntu 16.04.3 LTS" /><published>2017-11-04T12:26:56+05:30</published><updated>2017-11-04T12:26:56+05:30</updated><id>http://localhost:4000/blog/ubuntu/2017/11/04/powerline-in-ubuntu-16.04-LTS</id><content type="html" xml:base="http://localhost:4000/blog/ubuntu/2017/11/04/powerline-in-ubuntu-16.04-LTS.html">&lt;style type=&quot;text/css&quot;&gt;
+pre {
+    font-size: 9pt;
+    color: white;
+    background-color: #444;
+    margin-bottom: 1px;
+}
+.nt {
+    color: yellow !important;
+}
+.highlight {
+    background-color: #444 !important;
+}
+.highlight &gt; code {
+    background-color: #444 !important;
+    font-size: 9pt !important;
+}
+figure {
+   border-radius:6px;
+   overflow:hidden;
+}
+.code &gt; pre {
+    border: none;
+}
+&lt;/style&gt;
 
 &lt;p&gt;&lt;img src=&quot;/blog/images/powerline.png&quot; alt=&quot;powerline&quot; /&gt;&lt;/p&gt;
 
@@ -53,8 +77,8 @@ Requires:
 5
 &lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;nb&quot;&gt;export &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;TERM&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;screen-256color&quot;&lt;/span&gt;
 powerline-daemon &lt;span class=&quot;nt&quot;&gt;-q&lt;/span&gt;
-POWERLINE&lt;span class=&quot;se&quot;&gt;\_&lt;/span&gt;BASH&lt;span class=&quot;se&quot;&gt;\_&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;CONTINUATION&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;1
-POWERLINE&lt;span class=&quot;se&quot;&gt;\_&lt;/span&gt;BASH&lt;span class=&quot;se&quot;&gt;\_&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;SELECT&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;1
+&lt;span class=&quot;nv&quot;&gt;POWERLINE_BASH_CONTINUATION&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;1
+&lt;span class=&quot;nv&quot;&gt;POWERLINE_BASH_SELECT&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;1
 &lt;span class=&quot;nb&quot;&gt;.&lt;/span&gt; /usr/local/lib/python3.5/dist-packages/powerline/bindings/bash/powerline.sh&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 &lt;h4 id=&quot;enable-powerline-for-vim&quot;&gt;Enable Powerline for Vim&lt;/h4&gt;

@@ -3,13 +3,34 @@ layout: post
 title: "Installing Powerline in Ubuntu 16.04.3 LTS"
 date: 2017-11-04 12:26:56 +0530
 categories: ubuntu
+thumbnail: /blog/images/powerline.png
 ---
+<style type="text/css">
+pre {
+    font-size: 9pt;
+    color: white;
+    background-color: #444;
+    margin-bottom: 1px;
+}
+.nt {
+    color: yellow !important;
+}
+.highlight {
+    background-color: #444 !important;
+}
+.highlight > code {
+    background-color: #444 !important;
+    font-size: 9pt !important;
+}
+figure {
+   border-radius:6px;
+   overflow:hidden;
+}
+.code > pre {
+    border: none;
+}
+</style>
 
-{% if page.image %}
-  <meta property="og:image" content="/blog/images/powerline.png">
-{% else %}
-  <meta property="og:image" content="/blog/images/powerline.png">
-{% endif %}
 
 ![powerline](/blog/images/powerline.png)
 
@@ -48,8 +69,8 @@ Requires:
 {% highlight bash linenos %}
 export TERM="screen-256color"
 powerline-daemon -q
-POWERLINE\_BASH\_CONTINUATION=1
-POWERLINE\_BASH\_SELECT=1
+POWERLINE_BASH_CONTINUATION=1
+POWERLINE_BASH_SELECT=1
 . /usr/local/lib/python3.5/dist-packages/powerline/bindings/bash/powerline.sh
 {% endhighlight %}
 
