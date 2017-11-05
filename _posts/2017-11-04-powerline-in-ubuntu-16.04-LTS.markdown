@@ -14,8 +14,7 @@ share: yes
 <style>
 {% include custom.css %}
 </style>
-
-![powerline](/blog/images/powerline.png)
+![powerline](/blog/images/thumbnail-powerline.jpg)
 
 The powerline gives special geeky feel to the inner self. You can set the powerline to your `terminal` prompt, `vim` status or more.
 
