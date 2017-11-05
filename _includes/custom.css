@@ -1,0 +1,28 @@
+@font-face {
+    font-family: Monaco;
+    src: url(/blog/fonts/monaco.ttf);
+}
+pre {
+    font-family: Monaco;
+    font-size: 9.4pt;
+    color: white;
+    background-color: #444;
+    margin-bottom: 1px;
+}
+.nt {
+    color: yellow !important;
+}
+.highlight {
+    background-color: #444 !important;
+}
+.highlight > code {
+    background-color: #444 !important;
+    font-size: 9.5pt !important;
+}
+figure {
+   border-radius:6px;
+   overflow:hidden;
+}
+.code > pre {
+    border: none;
+}

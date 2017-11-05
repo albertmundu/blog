@@ -3,34 +3,12 @@ layout: post
 title: "Installing Powerline in Ubuntu 16.04.3 LTS"
 date: 2017-11-04 12:26:56 +0530
 categories: ubuntu
-thumbnail: /blog/images/powerline.png
+description: A tutorial to set up powerline in <code>bash</code>, <code>vim</code> and <code>tmux</code>.
+thumbnail: /blog/images/thumbnail-powerline.jpg
 ---
-<style type="text/css">
-pre {
-    font-size: 9pt;
-    color: white;
-    background-color: #444;
-    margin-bottom: 1px;
-}
-.nt {
-    color: yellow !important;
-}
-.highlight {
-    background-color: #444 !important;
-}
-.highlight > code {
-    background-color: #444 !important;
-    font-size: 9pt !important;
-}
-figure {
-   border-radius:6px;
-   overflow:hidden;
-}
-.code > pre {
-    border: none;
-}
+<style>
+{% include custom.css %}
 </style>
-
 
 ![powerline](/blog/images/powerline.png)
 
