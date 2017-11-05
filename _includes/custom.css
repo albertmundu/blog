@@ -16,6 +16,7 @@ pre {
     background-color: #444 !important;
 }
 .highlight > code {
+    font-family: Monaco;
     background-color: #444 !important;
     font-size: 9.5pt !important;
 }
