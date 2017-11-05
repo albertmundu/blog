@@ -8,6 +8,8 @@ image: /blog/images/thumbnail-powerline.jpg
 thumbnail: /blog/images/thumb-powerline.jpg
 type: blog
 tags: [powerline, ubuntu, terminal, vim, tmux, bash]
+author: Albert Mundu
+share: yes
 ---
 <style>
 {% include custom.css %}
