@@ -4,7 +4,8 @@ title: "Powerline in Ubuntu 16.04.3 LTS"
 date: 2017-11-04 12:26:56 +0530
 categories: ubuntu
 description: A tutorial to set up powerline in <code>bash</code>, <code>vim</code> and <code>tmux</code>.
-thumbnail: /blog/images/thumbnail-powerline.jpg
+image: /blog/images/thumbnail-powerline.jpg
+thumbnail: /blog/images/thumb-powerline.jpg
 type: blog
 tags: [powerline, ubuntu, terminal, vim, tmux, bash]
 ---
