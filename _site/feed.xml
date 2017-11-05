@@ -1,4 +1,89 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2017-10-18T02:27:06+05:30</updated><id>http://localhost:4000/</id><title type="html">Albert’s Blog</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><entry><title type="html">Welcome to Jekyll!</title><link href="http://localhost:4000/jekyll/update/2017/10/18/welcome-to-jekyll.html" rel="alternate" type="text/html" title="Welcome to Jekyll!" /><published>2017-10-18T01:49:56+05:30</published><updated>2017-10-18T01:49:56+05:30</updated><id>http://localhost:4000/jekyll/update/2017/10/18/welcome-to-jekyll</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2017/10/18/welcome-to-jekyll.html">&lt;p&gt;You’ll find this post in your &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run &lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll serve&lt;/code&gt;, which launches a web server and auto-regenerates your site when a file is updated.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.0">Jekyll</generator><link href="http://localhost:4000/blog/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/blog/" rel="alternate" type="text/html" /><updated>2017-11-05T13:34:55+05:30</updated><id>http://localhost:4000/blog/</id><title type="html">Extended Blog</title><subtitle>Albert writes down what he thinks to be written down.</subtitle><entry><title type="html">Installing Powerline in Ubuntu 16.04.3 LTS</title><link href="http://localhost:4000/blog/ubuntu/2017/11/04/powerline-in-ubuntu-16.04-LTS.html" rel="alternate" type="text/html" title="Installing Powerline in Ubuntu 16.04.3 LTS" /><published>2017-11-04T12:26:56+05:30</published><updated>2017-11-04T12:26:56+05:30</updated><id>http://localhost:4000/blog/ubuntu/2017/11/04/powerline-in-ubuntu-16.04-LTS</id><content type="html" xml:base="http://localhost:4000/blog/ubuntu/2017/11/04/powerline-in-ubuntu-16.04-LTS.html">&lt;meta property=&quot;og:image&quot; content=&quot;/blog/images/powerline.png&quot; /&gt;
+
+&lt;p&gt;&lt;img src=&quot;/blog/images/powerline.png&quot; alt=&quot;powerline&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The powerline gives special geeky feel to the inner self. You can set the powerline to your &lt;code class=&quot;highlighter-rouge&quot;&gt;terminal&lt;/code&gt; prompt, &lt;code class=&quot;highlighter-rouge&quot;&gt;vim&lt;/code&gt; status or more.&lt;/p&gt;
+
+&lt;p&gt;I have given the following steps by which you can set your &lt;code class=&quot;highlighter-rouge&quot;&gt;powerline&lt;/code&gt; to your &lt;code class=&quot;highlighter-rouge&quot;&gt;terminal&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;vim&lt;/code&gt; or &lt;code class=&quot;highlighter-rouge&quot;&gt;tmux&lt;/code&gt;.&lt;/p&gt;
+
+&lt;h4 id=&quot;steps-to-install&quot;&gt;Steps to install&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;Install the powerline using pip3, wget the fonts and apply them system wide.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+2
+3
+4
+5
+6
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;nv&quot;&gt;$sudo&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-H&lt;/span&gt; pip3 install git+https://github.com/powerline/powerline.git
+&lt;span class=&quot;nv&quot;&gt;$wget&lt;/span&gt; https://github.com/powerline/powerline/raw/develop/font/PowerlineSymbols.otf
+&lt;span class=&quot;nv&quot;&gt;$wget&lt;/span&gt; https://github.com/powerline/powerline/raw/develop/font/10-powerline-symbols.conf
+&lt;span class=&quot;nv&quot;&gt;$sudo&lt;/span&gt; mv PowerlineSymbols.otf /usr/share/fonts/
+&lt;span class=&quot;nv&quot;&gt;$sudo&lt;/span&gt; fc-cache &lt;span class=&quot;nt&quot;&gt;-vf&lt;/span&gt; /usr/share/fonts/
+&lt;span class=&quot;nv&quot;&gt;$sudo&lt;/span&gt; mv 10-powerline-symbols.conf /etc/fonts/conf.d/&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Get the location of installed powerline&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;nv&quot;&gt;$pip&lt;/span&gt; show powerline-status&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Name: powerline-status
+Version: 2.6.dev9999-git.b-5198b50463c7a29a9f5ef94bbc45a995223dac2d-
+Summary: The ultimate statusline/prompt utility.
+Home-page: https://github.com/powerline/powerline
+Author: Kim Silkebaekken
+Author-email: kim.silkebaekken+vim@gmail.com
+License: MIT
+Location: /usr/local/lib/python3.5/dist-packages
+Requires:
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;h4 id=&quot;enable-powerline-on-bash-shell&quot;&gt;Enable Powerline on Bash Shell&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;Add the following code in &lt;code class=&quot;highlighter-rouge&quot;&gt;~/.bashrc&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+2
+3
+4
+5
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;nb&quot;&gt;export &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;TERM&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;screen-256color&quot;&lt;/span&gt;
+powerline-daemon &lt;span class=&quot;nt&quot;&gt;-q&lt;/span&gt;
+POWERLINE&lt;span class=&quot;se&quot;&gt;\_&lt;/span&gt;BASH&lt;span class=&quot;se&quot;&gt;\_&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;CONTINUATION&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;1
+POWERLINE&lt;span class=&quot;se&quot;&gt;\_&lt;/span&gt;BASH&lt;span class=&quot;se&quot;&gt;\_&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;SELECT&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;1
+&lt;span class=&quot;nb&quot;&gt;.&lt;/span&gt; /usr/local/lib/python3.5/dist-packages/powerline/bindings/bash/powerline.sh&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;h4 id=&quot;enable-powerline-for-vim&quot;&gt;Enable Powerline for Vim&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;Add the following code in &lt;code class=&quot;highlighter-rouge&quot;&gt;~/.vimrc&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+2
+3
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;nb&quot;&gt;set  &lt;/span&gt;rtp+&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;/usr/local/lib/python3.5/dist-packages/powerline/bindings/vim/
+&lt;span class=&quot;nb&quot;&gt;set &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;laststatus&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;2
+&lt;span class=&quot;nb&quot;&gt;set &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;t_Co&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;256&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;h4 id=&quot;enable-powerline-for-tmux&quot;&gt;Enable Powerline for tmux&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;Add the following code in &lt;code class=&quot;highlighter-rouge&quot;&gt;~/.tmux.conf&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+2
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;nb&quot;&gt;source&lt;/span&gt; /usr/local/lib/python3.5/dist-packages/powerline/bindings/tmux/powerline.conf
+set-option &lt;span class=&quot;nt&quot;&gt;-g&lt;/span&gt; default-terminal &lt;span class=&quot;s2&quot;&gt;&quot;screen-256color&quot;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;h4 id=&quot;references&quot;&gt;References&lt;/h4&gt;
+&lt;ol&gt;
+  &lt;li&gt;https://www.tecmint.com/powerline-adds-powerful-statuslines-and-prompts-to-vim-and-bash/&lt;/li&gt;
+  &lt;li&gt;https://www.youtube.com/watch?v=_D6RkmgShvU&lt;/li&gt;
+&lt;/ol&gt;</content><author><name></name></author><summary type="html"></summary></entry><entry><title type="html">Welcome to Jekyll!</title><link href="http://localhost:4000/blog/jekyll/update/2017/10/18/welcome-to-jekyll.html" rel="alternate" type="text/html" title="Welcome to Jekyll!" /><published>2017-10-18T01:49:56+05:30</published><updated>2017-10-18T01:49:56+05:30</updated><id>http://localhost:4000/blog/jekyll/update/2017/10/18/welcome-to-jekyll</id><content type="html" xml:base="http://localhost:4000/blog/jekyll/update/2017/10/18/welcome-to-jekyll.html">&lt;p&gt;You’ll find this post in your &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run &lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll serve&lt;/code&gt;, which launches a web server and auto-regenerates your site when a file is updated.&lt;/p&gt;
 
 &lt;p&gt;To add new posts, simply add a file in the &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory that follows the convention &lt;code class=&quot;highlighter-rouge&quot;&gt;YYYY-MM-DD-name-of-post.ext&lt;/code&gt; and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.&lt;/p&gt;
 
