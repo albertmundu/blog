@@ -7,7 +7,7 @@
   {% endif %}
 
   {% if page.thumbnail %}
-  <meta property="og:image" content="{{ page.thumbnail | escape }}" />
+  <meta property="og:image" content="{{site.url}}{{ page.thumbnail | escape }}" />
   {% endif %}
 
   {% seo %}
